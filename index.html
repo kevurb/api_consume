@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <script
+          src="https://kit.fontawesome.com/10b9adabac.js"
+          crossorigin="anonymous"
+        ></script>
+        <title>DOG APP</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Mukta:wght@400;600&family=Roboto:ital,wght@0,500;1,300;1,500&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="styles.css">
+      </head>
+
+
+<body>
+    <h1>Dog Appi Consume </h1>
+    <span id="spanE"></span>
+    
+    <h2>Perros aleatorios</h2>
+    <section id="randomDogs" class="images-grid">
+        
+        
+    <article class="img-container">
+        <img  id="img1"  alt="los perros1" class="img">   
+        <button id="btn1" class="favoriteButton">Guardar en fav</button>
+        
+    </article>
+    <article class="img-container">
+        <img  id="img2"  alt="los perros1" class="img">   
+        <button id="btn2" class="favoriteButton">Guardar en fav</button>
+        
+    </article>
+    <article class="img-container">
+        <img  id="img3"  alt="los perros1" class="img">   
+        <button id="btn3" class="favoriteButton">Guardar en fav</button>
+        
+    </article>
+    <div class="">
+    <button onclick="loadRandomDog()" >Recargar Perros</button>
+    <button onclick="loadFavourites()" >Traer los favoritos</button>
+    </div>
+    
+    </section>
+    
+    <section id="uploadDog" class="uploadDog">
+        <h2>Sube una foto de tu perro</h2>
+        <form id="uploadingForm">
+            <label for="file" id="upload-label">
+                <span>Upload your dog picture! </span><i class="fa-solid fa-cloud-arrow-up"></i>
+            <input id="file" type="file" name="file"/>
+            </label>
+            <button type="button" onclick="uploadDogPhoto()">subir foto del perro</button>
+        </form>
+    </section>
+
+    <section id="favoritesDogs" class="favorite-container">
+    </section>
+    <section id="favoriteDog" class="images-container"></section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
